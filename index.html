@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <!-- =====================================================
+         BASIC DOCUMENT INFORMATION
+    ====================================================== -->
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Portofolio pribadi Hadi Saputra, mahasiswa Informatika yang tertarik pada pengembangan web, teknologi, dan analisis data."
+    />
+
+    <meta name="author" content="Hadi Saputra" />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Hadi Saputra | Personal Portfolio" />
+
+    <meta
+      property="og:description"
+      content="Portfolio pribadi Hadi Saputra, mahasiswa Informatika yang sedang mengembangkan kemampuan di bidang teknologi, web development, dan data."
+    />
+
+    <meta property="og:image" content="assets/images/og-image.webp" />
+
+    <!--
+        Ganti URL berikut setelah website sudah memiliki domain.
+    -->
+    <meta property="og:url" content="https://example.com/" />
+
+    <!-- =====================================================
+         THEME
+    ====================================================== -->
+
+    <meta name="theme-color" content="#2563eb" />
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+
+    <!-- =====================================================
+         CANONICAL URL
+    ====================================================== -->
+
+    <!--
+        Ganti URL setelah website memiliki domain.
+    -->
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- =====================================================
+         STYLESHEET
+    ====================================================== -->
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <!-- =====================================================
+         PAGE TITLE
+    ====================================================== -->
+
+    <title>Hadi Saputra | Personal Portfolio</title>
+  </head>
+
+  <body>
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar" aria-label="Navigasi utama">
+          <!-- Logo -->
+          <a href="#home" class="logo" aria-label="Hadi Saputra - Beranda">
+            Hadi<span>.</span>
+          </a>
+
+          <!-- Mobile Menu Button -->
+
+          <button
+            type="button"
+            class="menu-toggle"
+            aria-label="Buka menu navigasi"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+
+          <!-- Primary Navigation -->
+
+          <ul id="primary-navigation" class="nav-menu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link"> Beranda </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#about" class="nav-link"> Tentang </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#skills" class="nav-link"> Keahlian </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#projects" class="nav-link"> Proyek </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#experience" class="nav-link"> Pengalaman </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contact" class="nav-link"> Kontak </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+      <!-- =================================================
+             HERO SECTION
+        ================================================== -->
+
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero-content">
+            <!-- Hero Text -->
+
+            <div class="hero-text">
+              <p class="hero-greeting">Halo, saya</p>
+
+              <h1 id="hero-title">Hadi Saputra</h1>
+
+              <h2>
+                Mahasiswa Sistem Informasi &
+                <span>Tech Enthusiast</span>
+              </h2>
+
+              <p class="hero-description">
+                Saya sedang membangun kemampuan di bidang pengembangan web,
+                teknologi, dan analisis data melalui pembelajaran, eksperimen,
+                dan berbagai proyek nyata.
+              </p>
+
+              <!-- Hero Actions -->
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary"> Lihat Proyek </a>
+
+                <a href="#contact" class="btn btn-secondary"> Hubungi Saya </a>
+              </div>
+            </div>
+
+            <!-- Hero Image -->
+
+            <div class="hero-image">
+              <figure>
+                <img
+                  src="assets/images/hadiberdiri.png"
+                  alt="Foto profil Hadi Saputra"
+                  width="400"
+                  height="400"
+                  loading="eager"
+                  fetchpriority="high"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             ABOUT SECTION
+        ================================================== -->
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">Tentang Saya</p>
+
+            <h2 id="about-title">Mengenal Saya Lebih Dekat</h2>
+          </header>
+
+          <div class="about-content">
+            <!-- About Image -->
+
+            <div class="about-image">
+              <figure>
+                <img
+                  src="assets/images/profile.webp"
+                  alt="Hadi Saputra"
+                  width="600"
+                  height="750"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+
+            <!-- About Content -->
+
+            <div class="about-text">
+              <p>
+                Saya adalah mahasiswa Program Studi Informatika yang memiliki
+                ketertarikan terhadap teknologi, pengembangan web, dan
+                pengolahan data.
+              </p>
+
+              <p>
+                Saat ini saya sedang mengembangkan kemampuan melalui
+                perkuliahan, pembelajaran mandiri, dan berbagai proyek untuk
+                membangun pengalaman praktis.
+              </p>
+
+              <p>
+                Saya percaya bahwa kemampuan dibangun melalui proses belajar dan
+                praktik yang konsisten. Karena itu, saya terus mencoba hal baru,
+                membangun proyek, dan mengevaluasi perkembangan saya.
+              </p>
+
+              <a href="#contact" class="text-link"> Mari terhubung → </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             SKILLS SECTION
+        ================================================== -->
+
+      <section id="skills" class="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">Keahlian</p>
+
+            <h2 id="skills-title">Skills & Technologies</h2>
+
+            <p>
+              Teknologi dan tools yang sedang saya pelajari dan gunakan dalam
+              berbagai proyek.
+            </p>
+          </header>
+
+          <div class="skills-grid">
+            <!-- Front-End -->
+
+            <article class="skill-card">
+              <h3>Front-End Development</h3>
+
+              <ul class="skill-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+              </ul>
+            </article>
+
+            <!-- Data -->
+
+            <article class="skill-card">
+              <h3>Data & Analysis</h3>
+
+              <ul class="skill-list">
+                <li>Microsoft Excel</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Data Visualization</li>
+              </ul>
+            </article>
+
+            <!-- Tools -->
+
+            <article class="skill-card">
+              <h3>Tools</h3>
+
+              <ul class="skill-list">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Microsoft Office</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             PROJECTS SECTION
+        ================================================== -->
+
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">Portfolio</p>
+
+            <h2 id="projects-title">Proyek yang Saya Kerjakan</h2>
+
+            <p>
+              Beberapa proyek yang saya buat sebagai bagian dari proses belajar
+              dan pengembangan kemampuan.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+
+            <article class="project-card">
+              <figure class="project-image">
+                <img
+                  src="assets/images/projects/library.webp"
+                  alt="Tampilan Library Management System"
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                />
+              </figure>
+
+              <div class="project-content">
+                <p class="project-category">Web Development</p>
+
+                <h3>Library Management System</h3>
+
+                <p>
+                  Aplikasi web sederhana untuk mengelola data buku perpustakaan
+                  menggunakan HTML, CSS, dan JavaScript.
+                </p>
+
+                <ul class="project-technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+
+                <div class="project-links">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Melihat demo Library Management System"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Melihat kode Library Management System di GitHub"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+
+            <article class="project-card">
+              <figure class="project-image">
+                <img
+                  src="assets/images/projects/project-2.webp"
+                  alt="Preview proyek analisis data"
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                />
+              </figure>
+
+              <div class="project-content">
+                <p class="project-category">Data Analysis</p>
+
+                <h3>Data Analysis Project</h3>
+
+                <p>
+                  Proyek analisis data untuk mengeksplorasi, membersihkan, dan
+                  menemukan insight dari sebuah dataset.
+                </p>
+
+                <ul class="project-technologies">
+                  <li>Excel</li>
+                  <li>SQL</li>
+                  <li>Python</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Lihat Proyek
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+
+            <article class="project-card">
+              <figure class="project-image">
+                <img
+                  src="assets/images/projects/project-3.webp"
+                  alt="Preview personal website"
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                />
+              </figure>
+
+              <div class="project-content">
+                <p class="project-category">Web Development</p>
+
+                <h3>Personal Website</h3>
+
+                <p>
+                  Website personal yang dirancang untuk menampilkan profil,
+                  kemampuan, proyek, dan pengalaman.
+                </p>
+
+                <ul class="project-technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             EXPERIENCE SECTION
+        ================================================== -->
+
+      <section
+        id="experience"
+        class="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">Perjalanan</p>
+
+            <h2 id="experience-title">Pendidikan & Pengalaman</h2>
+          </header>
+
+          <div class="timeline">
+            <!-- Education -->
+
+            <article class="timeline-item">
+              <div class="timeline-content">
+                <time datetime="2025"> 2025 - Sekarang </time>
+
+                <h3>Mahasiswa Informatika</h3>
+
+                <p class="timeline-company">Universitas Adzkia</p>
+
+                <p>
+                  Mempelajari berbagai dasar ilmu komputer, pemrograman,
+                  pengembangan perangkat lunak, sistem informasi, dan teknologi
+                  informasi.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project Experience -->
+
+            <article class="timeline-item">
+              <div class="timeline-content">
+                <time datetime="2026"> 2026 </time>
+
+                <h3>Personal & Academic Projects</h3>
+
+                <p class="timeline-company">Independent Projects</p>
+
+                <p>
+                  Mengembangkan berbagai proyek sebagai sarana untuk menerapkan
+                  pengetahuan pemrograman dan teknologi.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             SERVICES / FOCUS SECTION
+        ================================================== -->
+
+      <section id="services" class="services" aria-labelledby="services-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">What I Do</p>
+
+            <h2 id="services-title">Fokus Saya</h2>
+          </header>
+
+          <div class="services-grid">
+            <!-- Web Development -->
+
+            <article class="service-card">
+              <h3>Web Development</h3>
+
+              <p>
+                Membangun website yang responsif, terstruktur, dan mudah
+                digunakan.
+              </p>
+            </article>
+
+            <!-- Data Analysis -->
+
+            <article class="service-card">
+              <h3>Data Analysis</h3>
+
+              <p>
+                Mengolah data untuk menemukan informasi dan insight yang dapat
+                digunakan untuk mendukung pengambilan keputusan.
+              </p>
+            </article>
+
+            <!-- Continuous Learning -->
+
+            <article class="service-card">
+              <h3>Continuous Learning</h3>
+
+              <p>
+                Terus mempelajari teknologi dan membangun proyek untuk
+                meningkatkan kemampuan teknis.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             CONTACT SECTION
+        ================================================== -->
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">Kontak</p>
+
+            <h2 id="contact-title">Mari Terhubung</h2>
+
+            <p>
+              Terbuka untuk berdiskusi, berkolaborasi, atau bertukar ide
+              mengenai teknologi.
+            </p>
+          </header>
+
+          <div class="contact-content">
+            <!-- Contact Information -->
+
+            <address class="contact-info">
+              <div class="contact-item">
+                <h3>Email</h3>
+
+                <a href="mailto:emailanda@example.com">
+                  emailanda@example.com
+                </a>
+              </div>
+
+              <div class="contact-item">
+                <h3>LinkedIn</h3>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
+              </div>
+
+              <div class="contact-item">
+                <h3>GitHub</h3>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </address>
+
+            <!-- Contact Form -->
+
+            <form class="contact-form" action="#" method="post" novalidate>
+              <!-- Name -->
+
+              <div class="form-group">
+                <label for="name"> Nama </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+
+              <!-- Email -->
+
+              <div class="form-group">
+                <label for="email"> Email </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <!-- Subject -->
+
+              <div class="form-group">
+                <label for="subject"> Subjek </label>
+
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  minlength="3"
+                />
+              </div>
+
+              <!-- Message -->
+
+              <div class="form-group">
+                <label for="message"> Pesan </label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  minlength="10"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Form Status -->
+
+              <div class="form-status" aria-live="polite"></div>
+
+              <!-- Submit -->
+
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Footer Brand -->
+
+          <div class="footer-brand">
+            <a href="#home" class="logo" aria-label="Hadi Saputra - Beranda">
+              Hadi<span>.</span>
+            </a>
+
+            <p>Belajar. Membangun. Berkembang.</p>
+          </div>
+
+          <!-- Social Links -->
+
+          <nav class="social-links" aria-label="Media sosial">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Hadi Saputra"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Hadi Saputra"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Hadi Saputra"
+            >
+              Instagram
+            </a>
+          </nav>
+        </div>
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+          <p>
+            &copy;
+            <span id="current-year"></span>
+            Hadi Saputra. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
