@@ -47,8 +47,8 @@ const revealElements = document.querySelectorAll(
 );
 revealElements.forEach((element) => {
   element.style.opacity = "0";
-  element.style.transform = "translateY(25px)";
-  element.style.transition = "opacity 0.7s ease, transform 0.7s ease";
+  element.style.transform = "translateY(12px)";
+  element.style.transition = "opacity 0.5s ease, transform 0.5s ease";
 });
 function revealOnScroll() {
   const windowHeight = window.innerHeight;
@@ -94,7 +94,7 @@ backToTop.addEventListener("click", () => {
 document.querySelectorAll(".project-image img").forEach((image) => {
   image.addEventListener("error", () => {
     image.style.display = "none";
-    image.parentElement.style.background = "var(--bg-secondary)";
+    image.parentElement.style.background = "var(--surface)";
   });
 });
 
