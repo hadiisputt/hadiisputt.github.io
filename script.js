@@ -46,16 +46,13 @@ const revealElements = document.querySelectorAll(
   ".section-header, .about-text, .skill-card, .timeline-item, .project-card, .contact-content"
 );
 revealElements.forEach((element) => {
-  element.style.opacity = "0";
-  element.style.transform = "translateY(12px)";
-  element.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+  element.classList.add("js-reveal");
 });
 function revealOnScroll() {
   const windowHeight = window.innerHeight;
   revealElements.forEach((element) => {
     if (element.getBoundingClientRect().top < windowHeight - 100) {
-      element.style.opacity = "1";
-      element.style.transform = "translateY(0)";
+      element.classList.add("is-visible");
     }
   });
 }
@@ -63,10 +60,10 @@ window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
 document.querySelectorAll(".skill-card").forEach((card, index) => {
-  card.style.transitionDelay = `${index * 0.08}s`;
+  card.classList.add(`reveal-delay-${index}`);
 });
 document.querySelectorAll(".project-card").forEach((card, index) => {
-  card.style.transitionDelay = `${index * 0.1}s`;
+  card.classList.add(`reveal-delay-${index}`);
 });
 
 const backToTop = document.createElement("button");
@@ -76,15 +73,7 @@ backToTop.setAttribute("aria-label", "Back to top");
 document.body.appendChild(backToTop);
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 500) {
-    backToTop.style.opacity = "1";
-    backToTop.style.visibility = "visible";
-    backToTop.style.transform = "translateY(0)";
-  } else {
-    backToTop.style.opacity = "0";
-    backToTop.style.visibility = "hidden";
-    backToTop.style.transform = "translateY(10px)";
-  }
+  backToTop.classList.toggle("is-visible", window.scrollY > 500);
 });
 
 backToTop.addEventListener("click", () => {
@@ -93,8 +82,7 @@ backToTop.addEventListener("click", () => {
 
 document.querySelectorAll(".project-image img").forEach((image) => {
   image.addEventListener("error", () => {
-    image.style.display = "none";
-    image.parentElement.style.background = "var(--surface)";
+    image.parentElement.classList.add("image-error");
   });
 });
 
